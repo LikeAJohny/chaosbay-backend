@@ -7,6 +7,7 @@
   "author": "Julian Domke <juliandomke@outlook.de>",
   "license": "UNLICENSED",
   "scripts": {
+    "dev": "sanity dev",
     "start": "sanity start",
     "test": "sanity check",
     "build": "sanity build"
@@ -15,18 +16,17 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.0.9",
     "@sanity/components": "^2.0.9",
-    "@sanity/core": "^2.0.9",
-    "@sanity/default-layout": "^2.0.9",
-    "@sanity/default-login": "^2.0.9",
-    "@sanity/desk-tool": "^2.0.9",
-    "@sanity/vision": "^2.0.9",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-dom": "^17.0"
+    "@sanity/vision": "^3.17.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.17.0",
+    "styled-components": "^5.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/judocodes/chaosbay.git"
