@@ -1,10 +1,9 @@
 {
-  "name": "chaosbay",
+  "name": "chaosbay-backend",
   "private": true,
-  "version": "1.0.0",
-  "description": "",
-  "main": "package.json",
-  "author": "Julian Domke <juliandomke@outlook.de>",
+  "version": "2.0.0",
+  "description": "Backend of the Chaosbay Website",
+  "author": "Jonas Kemmer <likeajohny@users.noreply.github.com>",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev",
@@ -16,6 +15,7 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/color-input": "^3.1.0",
     "@sanity/components": "^2.0.9",
     "@sanity/vision": "^3.17.0",
     "prop-types": "^15.8.1",

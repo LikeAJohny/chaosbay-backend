@@ -1,8 +1,9 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
-import schemas from "./schemas/schema";
+import schemas from "./schemas";
 import deskStructure from "./deskStructure";
 import { visionTool } from "@sanity/vision";
+import { colorInput } from '@sanity/color-input';
 
 export default defineConfig({
   title: "Chaosbay",
@@ -13,6 +14,7 @@ export default defineConfig({
       structure: deskStructure,
     }),
     visionTool(),
+    colorInput(),
   ],
   tools: (prev) => {
     return import.meta.env.DEV
