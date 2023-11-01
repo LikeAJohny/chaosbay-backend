@@ -1,5 +1,5 @@
 import about from './about';
-import media from './media';
+import media from './videos';
 import maintext from './maintext';
 import album from './album';
 import impressum from './impressum';
@@ -17,5 +17,5 @@ export default [
   about,
   media,
   album,
-  impressum
+  impressum,
 ];
