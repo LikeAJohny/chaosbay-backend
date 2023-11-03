@@ -7,6 +7,7 @@ import shows from './shows';
 import announcement from './announcement';
 import imageContent from './imageContent';
 import settings from './settings';
+import merch from './merch';
 
 export default [
   settings,
@@ -18,4 +19,5 @@ export default [
   media,
   album,
   impressum,
+  merch,
 ];

@@ -19,10 +19,18 @@ export default (S) =>
       S.listItem()
         .title('Videos')
         .child(S.document().schemaType('videos').documentId('videos')),
+      S.listItem()
+        .title('Merch')
+        .child(S.document().schemaType('merch').documentId('merch')),
       ...S.documentTypeListItems().filter(
         (listItem) =>
-          !['settings', 'announcement', 'shows', 'about', 'videos'].includes(
-            listItem.getId(),
-          ),
+          ![
+            'settings',
+            'announcement',
+            'shows',
+            'about',
+            'videos',
+            'merch',
+          ].includes(listItem.getId()),
       ),
     ]);
