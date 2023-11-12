@@ -16,9 +16,6 @@ export default (S: StructureBuilder) =>
         .title('Shows')
         .child(S.document().schemaType('shows').documentId('shows')),
       S.listItem()
-        .title('About')
-        .child(S.document().schemaType('about').documentId('about')),
-      S.listItem()
         .title('Videos')
         .child(S.document().schemaType('videos').documentId('videos')),
       S.listItem()
@@ -26,13 +23,8 @@ export default (S: StructureBuilder) =>
         .child(S.document().schemaType('merch').documentId('merch')),
       ...S.documentTypeListItems().filter(
         (listItem) =>
-          ![
-            'settings',
-            'announcement',
-            'shows',
-            'about',
-            'videos',
-            'merch',
-          ].includes(listItem.getId()),
+          !['settings', 'announcement', 'shows', 'videos', 'merch'].includes(
+            listItem.getId(),
+          ),
       ),
     ]);
