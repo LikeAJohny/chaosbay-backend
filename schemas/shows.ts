@@ -1,4 +1,4 @@
-import { defineArrayMember, defineField, defineType } from 'sanity';
+import { defineArrayMember, defineField } from 'sanity';
 
 const showItem = defineArrayMember({
   name: 'show',
