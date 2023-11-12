@@ -1,5 +1,23 @@
-import { defineField, defineType } from 'sanity';
-import merchItem from './merch-item';
+import { defineArrayMember, defineField, defineType } from 'sanity';
+
+const merchItem = defineArrayMember({
+  name: 'merchItem',
+  title: 'Merch Item',
+  type: 'object',
+  fields: [
+    defineField({ type: 'string', name: 'name', title: 'Name' }),
+    defineField({
+      type: 'image',
+      name: 'image',
+      title: 'Image',
+    }),
+    defineField({
+      type: 'url',
+      name: 'link',
+      title: 'Link',
+    }),
+  ],
+});
 
 export default defineType({
   name: 'merch',

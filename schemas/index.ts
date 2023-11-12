@@ -1,6 +1,6 @@
 import about from './about';
-import media from './videos';
-import maintext from './maintext';
+import videos from './videos';
+import text from './text';
 import album from './album';
 import impressum from './impressum';
 import shows from './shows';
@@ -13,10 +13,10 @@ export default [
   settings,
   announcement,
   imageContent,
-  maintext,
+  text,
   shows,
   about,
-  media,
+  videos,
   album,
   impressum,
   merch,

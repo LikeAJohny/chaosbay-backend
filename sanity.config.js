@@ -1,7 +1,7 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 import schemas from './schemas/index';
-import deskStructure from './deskStructure';
+import deskStructure from './deskStructure.js';
 import { visionTool } from '@sanity/vision';
 import { colorInput } from '@sanity/color-input';
 
