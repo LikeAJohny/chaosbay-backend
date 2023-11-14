@@ -37,11 +37,16 @@ export default defineField({
   title: 'Shows',
   type: 'document',
   fields: [
-    {
+    defineField({
       name: 'headline',
       title: 'Headline',
       type: 'string',
-    },
+    }),
+    defineField({
+      name: 'limit',
+      title: 'Limit',
+      type: 'number',
+    }),
     defineField({
       name: 'shows',
       title: 'Shows',
