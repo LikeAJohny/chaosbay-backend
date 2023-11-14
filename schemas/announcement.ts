@@ -10,5 +10,6 @@ export default defineType({
     defineField({ type: 'image', name: 'image', title: 'Image' }),
     defineField({ type: 'string', name: 'video', title: 'Video' }),
     defineField({ type: 'string', name: 'link', title: 'Link' }),
+    defineField({ type: 'string', name: 'linkTitle', title: 'Link Title' }),
   ],
 });
