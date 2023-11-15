@@ -1,28 +1,28 @@
-import { defineArrayMember, defineField } from 'sanity';
+import { defineArrayMember, defineField } from "sanity";
 
 const showItem = defineArrayMember({
-  name: 'show',
-  title: 'Show',
-  type: 'object',
+  name: "show",
+  title: "Show",
+  type: "object",
   fields: [
-    defineField({ type: 'string', name: 'name', title: 'Name' }),
+    defineField({ type: "string", name: "name", title: "Name" }),
     defineField({
-      type: 'string',
-      name: 'location',
-      title: 'Location',
+      type: "string",
+      name: "location",
+      title: "Location",
     }),
-    defineField({ type: 'date', name: 'date', title: 'Date' }),
+    defineField({ type: "date", name: "date", title: "Date" }),
     defineField({
-      type: 'string',
-      name: 'ticketLink',
-      title: 'Ticket Link',
+      type: "string",
+      name: "ticketLink",
+      title: "Ticket Link",
     }),
   ],
   preview: {
     select: {
-      name: 'name',
-      location: 'location',
-      date: 'date',
+      name: "name",
+      location: "location",
+      date: "date",
     },
     prepare({ name, location, date }) {
       return {
@@ -33,24 +33,24 @@ const showItem = defineArrayMember({
 });
 
 export default defineField({
-  name: 'shows',
-  title: 'Shows',
-  type: 'document',
+  name: "shows",
+  title: "Shows",
+  type: "document",
   fields: [
     defineField({
-      name: 'headline',
-      title: 'Headline',
-      type: 'string',
+      name: "headline",
+      title: "Headline",
+      type: "string",
     }),
     defineField({
-      name: 'limit',
-      title: 'Limit',
-      type: 'number',
+      name: "limit",
+      title: "Limit",
+      type: "number",
     }),
     defineField({
-      name: 'shows',
-      title: 'Shows',
-      type: 'array',
+      name: "shows",
+      title: "Shows",
+      type: "array",
       of: [showItem],
     }),
   ],

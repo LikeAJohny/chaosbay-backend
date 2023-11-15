@@ -1,38 +1,38 @@
-import { defineArrayMember, defineField, defineType } from 'sanity';
+import { defineArrayMember, defineField, defineType } from "sanity";
 
 const merchItem = defineArrayMember({
-  name: 'merchItem',
-  title: 'Merch Item',
-  type: 'object',
+  name: "merchItem",
+  title: "Merch Item",
+  type: "object",
   fields: [
-    defineField({ type: 'string', name: 'name', title: 'Name' }),
+    defineField({ type: "string", name: "name", title: "Name" }),
     defineField({
-      type: 'image',
-      name: 'image',
-      title: 'Image',
+      type: "image",
+      name: "image",
+      title: "Image",
     }),
     defineField({
-      type: 'url',
-      name: 'link',
-      title: 'Link',
+      type: "url",
+      name: "link",
+      title: "Link",
     }),
   ],
 });
 
 export default defineType({
-  name: 'merch',
-  title: 'Merch',
-  type: 'document',
+  name: "merch",
+  title: "Merch",
+  type: "document",
   fields: [
     defineField({
-      name: 'headline',
-      title: 'Headline',
-      type: 'string',
+      name: "headline",
+      title: "Headline",
+      type: "string",
     }),
     defineField({
-      name: 'merchItems',
-      title: 'Merch Items',
-      type: 'array',
+      name: "merchItems",
+      title: "Merch Items",
+      type: "array",
       of: [merchItem],
     }),
   ],
