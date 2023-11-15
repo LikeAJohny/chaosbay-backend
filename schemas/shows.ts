@@ -5,11 +5,11 @@ const showItem = defineArrayMember({
   title: "Show",
   type: "object",
   fields: [
-    defineField({ type: "string", name: "name", title: "Name" }),
+    defineField({ type: "string", name: "name", title: "Location / Name" }),
     defineField({
       type: "string",
       name: "location",
-      title: "Location",
+      title: "City / Country",
     }),
     defineField({ type: "date", name: "date", title: "Date" }),
     defineField({
