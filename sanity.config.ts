@@ -1,15 +1,15 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
-import schemaTypes from "./schemas/index";
+import { schemaTypes } from "./schemas";
 import deskStructure from "./deskStructure";
 import { colorInput } from "@sanity/color-input";
 
 export default defineConfig({
   name: "default",
-  title: "Chaosbay New",
+  title: "Chaosbay Relaunch",
 
-  projectId: "1n0uivor",
+  projectId: "2vsqsxqy",
   dataset: "production",
 
   plugins: [

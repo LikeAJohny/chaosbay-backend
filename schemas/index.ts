@@ -7,7 +7,7 @@ import settings from "./settings";
 import merch from "./merch";
 import seo from "./seo";
 
-export default [
+export const schemaTypes = [
   settings,
   announcement,
   text,
