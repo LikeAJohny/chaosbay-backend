@@ -11,8 +11,8 @@ export default defineType({
       type: "string",
     }),
     defineField({
-      title: "Video IDs",
-      name: "videoIds",
+      title: "Video URLs",
+      name: "videos",
       type: "array",
       of: [{ type: "url" }],
     }),
