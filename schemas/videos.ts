@@ -14,7 +14,7 @@ export default defineType({
       title: "Video IDs",
       name: "videoIds",
       type: "array",
-      of: [{ type: "string" }],
+      of: [{ type: "url" }],
     }),
   ],
 });
