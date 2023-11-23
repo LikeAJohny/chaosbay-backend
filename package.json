@@ -2,7 +2,7 @@
   "name": "chaosbay-backend",
   "private": true,
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Chaosbay Website Backend",
   "author": "Jonas Kemmer <likeajohny@users.noreply.github.com>",
   "license": "UNLICENSED",
