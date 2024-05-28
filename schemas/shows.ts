@@ -11,7 +11,8 @@ const showItem = defineArrayMember({
       name: "location",
       title: "City / Country",
     }),
-    defineField({ type: "date", name: "date", title: "Date" }),
+    defineField({ type: "date", name: "date", title: "(From) Date" }),
+    defineField({ type: "date", name: "toDate", title: "To Date" }),
     defineField({
       type: "string",
       name: "ticketLink",
